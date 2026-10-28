@@ -1,0 +1,79 @@
+{
+  "name": "dsh-tieba-scroll",
+  "version": "1.0.0",
+  "description": "DSH 插件：每天替你刷一轮贴吧 —— 读楼层挑出值得的、写一份日报，值得的就回一句 @ 你",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "tieba",
+    "baidu",
+    "duty"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "lib",
+    "prompts",
+    "test",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "engines": {
+    "dsh": ">=0.1.7-rc.1",
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "*",
+    "@deepseek-ai/schemastery": "*"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    },
+    "@deepseek-ai/schemastery": {
+      "optional": true
+    }
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-plugins"
+      ]
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZyRay233/DSH-Tieba-scroll.git"
+  },
+  "homepage": "https://github.com/ZyRay233/DSH-Tieba-scroll#readme",
+  "bugs": {
+    "url": "https://github.com/ZyRay233/DSH-Tieba-scroll/issues"
+  }
+}
