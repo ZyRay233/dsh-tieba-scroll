@@ -70,10 +70,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZyRay233/DSH-Tieba-scroll.git"
+    "url": "git+https://github.com/ZyRay233/dsh-tieba-scroll.git"
   },
-  "homepage": "https://github.com/ZyRay233/DSH-Tieba-scroll#readme",
+  "homepage": "https://github.com/ZyRay233/dsh-tieba-scroll#readme",
   "bugs": {
-    "url": "https://github.com/ZyRay233/DSH-Tieba-scroll/issues"
+    "url": "https://github.com/ZyRay233/dsh-tieba-scroll/issues"
   }
 }
