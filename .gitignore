@@ -1,15 +1,19 @@
-﻿node_modules/
+node_modules/
 *.log
 
-# 运行时产物 —— 绝不能提交
-tieba_credential.json
-config.json
-seen.json
-local-override.json
-charter.sha256
-windows.json
-out/
-duty.md
+# ── 运行时产物 ──────────────────────────────────────────────
+# ⚠️ 2026-10-28 修：这里必须全部加 `/` 前缀（只匹配**仓库根**）。
+#    原来写的是裸 `duty.md`，结果把 prompts/duty.md（插件自带的**值班章程**）
+#    一起吃掉了 —— 整个 prompts/ 目录都没进仓库，别人 clone 下来章程是空的，
+#    模型只能「按常识判断」，红线全失效。这个坑不能再踩第二次。
+/tieba_credential.json
+/config.json
+/seen.json
+/local-override.json
+/charter.sha256
+/windows.json
+/out/
+/duty.md
 
 # 编辑器 / 系统
 .DS_Store
